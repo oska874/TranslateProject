@@ -1,18 +1,21 @@
 ezio is translating
 
 
-In Device We Trust: Measure Twice, Compute Once with Xen, Linux, TPM 2.0 and TXT
+在我们信任的设备：使用 Linux， TPM 2.0 ， 以及 TXT，测量两次，计算一次
 ============================================================
 
 
 ![software integration](https://www.linux.com/sites/lcom/files/styles/rendered_file/public/puzzle.jpg?itok=_B0M93-p "software integration")
-Xen virtualization enables innovative applications to be economically integrated with measured, interoperable software components on general-purpose hardware.[Creative Commons Zero][1]Pixabay
+Xen 虚拟化是的新颖的程序可以简单的集成到测试过的，能够共同操作的软件组件，运行在通用硬件上。[Creative Commons Zero][1]Pixabay
 
 Is it a small tablet or large phone? Is it a phone or broadcast sensor? Is it a server or virtual desktop cluster? Is x86 emulating ARM, or vice-versa? Is Linux inspiring Windows, or the other way around? Is it microcode or hardware? Is it firmware or software? Is it microkernel or hypervisor? Is it a security or quality update?  _Is anything in my device the same as yesterday? When we observe our evolving devices and their remote services, what can we question and measure?_ 
 
-### General Purpose vs. Special Purpose Ecosystems
+目标设备是个小平板或者大手机？是个手机还是个广播传感器？是服务器还是虚拟桌面集群？是 x86 模拟的 ARM，还是反过来？是 Linux 鼓舞了 Windows，或者还是反其道？是安全或者质量升级？_我现在的设备和以前的一模一样？当我们观察我们进化中的设备以及他们的远程服务，我们可以提出什么样的问题和测量手段？_
+
+### 通用 vs 专用生态系统
 
 The general-purpose computer now lives in a menagerie of special-purpose devices and information appliances. Yet software and hardware components  _within_  devices are increasingly flexible, blurring category boundaries. With hardware virtualization on x86 and ARM platforms, the ecosystems of multiple operating systems can coexist on a single device. Can a modular and extensible multi-vendor architecture compete with the profitability of vertically integrated products from a single vendor?
+
 
 Operating systems evolved alongside applications for lucrative markets. PC desktops were driven by business productivity and media creation. Web browsers abstracted OS differences, as software revenue shifted to e-commerce, services, and advertising. Mobile devices added sensors, radios and hardware decoders for content and communication. Apple, now the most profitable computer company, vertically integrates software and services with sensors and hardware. Other companies monetize data, increasing demand for memory and storage optimization.
 
