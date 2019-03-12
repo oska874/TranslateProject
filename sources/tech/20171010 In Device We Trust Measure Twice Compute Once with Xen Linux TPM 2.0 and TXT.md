@@ -8,30 +8,27 @@ ezio is translating
 ![software integration](https://www.linux.com/sites/lcom/files/styles/rendered_file/public/puzzle.jpg?itok=_B0M93-p "software integration")
 Xen 虚拟化是的新颖的程序可以简单的集成到测试过的，能够共同操作的软件组件，运行在通用硬件上。[Creative Commons Zero][1]Pixabay
 
-Is it a small tablet or large phone? Is it a phone or broadcast sensor? Is it a server or virtual desktop cluster? Is x86 emulating ARM, or vice-versa? Is Linux inspiring Windows, or the other way around? Is it microcode or hardware? Is it firmware or software? Is it microkernel or hypervisor? Is it a security or quality update?  _Is anything in my device the same as yesterday? When we observe our evolving devices and their remote services, what can we question and measure?_ 
-
 目标设备是个小平板或者大手机？是个手机还是个广播传感器？是服务器还是虚拟桌面集群？是 x86 模拟的 ARM，还是反过来？是 Linux 鼓舞了 Windows，或者还是反其道？是安全或者质量升级？_我现在的设备和以前的一模一样？当我们观察我们进化中的设备以及他们的远程服务，我们可以提出什么样的问题和测量手段？_
 
 ### 通用 vs 专用生态系统
 
-The general-purpose computer now lives in a menagerie of special-purpose devices and information appliances. Yet software and hardware components  _within_  devices are increasingly flexible, blurring category boundaries. With hardware virtualization on x86 and ARM platforms, the ecosystems of multiple operating systems can coexist on a single device. Can a modular and extensible multi-vendor architecture compete with the profitability of vertically integrated products from a single vendor?
+通用计算机现在生存在一堆专用设备和信息家电中。但是 _在_ 设备中的软件和硬件组件的复杂性不断提高，边界不断模糊。通过 x86 和 arm 平台上的硬件虚拟化，多个操作系统的生态可以共存在一个设备上。模块化和可扩展的多厂家架构可以在垂直集成产品的盈利能力上和但一个厂家竞争码？
 
+操作系统随着盈利市场的应用一起进化。PC 桌面是被商业生产力和媒体创造力驱动的。网络浏览器抽象了 OS 的不同，随着软件盈利模式转向电子商务，服务，和广告。移动设备针对内容与通信增加了传感器，无线电和硬件解码器。Apple，现在是最盈利的电脑公司，将软件和服务与传感器和硬件进行垂直集成。其它公司货币化了数据，提高了存储器的价值和存储优化。
 
-Operating systems evolved alongside applications for lucrative markets. PC desktops were driven by business productivity and media creation. Web browsers abstracted OS differences, as software revenue shifted to e-commerce, services, and advertising. Mobile devices added sensors, radios and hardware decoders for content and communication. Apple, now the most profitable computer company, vertically integrates software and services with sensors and hardware. Other companies monetize data, increasing demand for memory and storage optimization.
+有些市场需要信息安全和功能安全认证：汽车，飞行器，航海，交叉领域，工业控制，经济，能源，医药，以及嵌入式设备。作为软件“吞噬世界”，我们该如如何在没有企业和消费市场的规模经济的情况下使得垂直市场[现代化][5]？一个答案是来自基于硬件虚拟化的设备架构，Xen，[解集][6]，OpenEmbedded Linux 和测量发射。[OpenXT][7] 派生物使用可扩展的，开源基础，来增强在通用硬件上的专有应用的策略，重用可互相操作的组件。
 
-Some markets require security or safety certifications: automotive, aviation, marine, cross domain, industrial control, finance, energy, medical, and embedded devices. As software "eats the world," how can we [modernize][5]vertical markets without the economies of scale seen in enterprise and consumer markets? One answer comes from device architectures based on hardware virtualization, Xen, [disaggregation][6], OpenEmbedded Linux and measured launch. [OpenXT][7] derivatives use this extensible, open-source base to enforce policy for specialized applications on general-purpose hardware, while reusing interoperable components.
+[OpenEmbedded][8] Linux 支持一系列的 X86 和 arm 设备，而 Xen 隔离了操作系统和 [unikernels][9]。从不同生态得到的应用和驱动可以同时运行，扩展了技术和授权选项。特殊用途的软件可安全的和通过软件组装在一起，通过虚拟机隔离，由客户和 OEM 的策略定义的由硬件辅助的信任根来锚定。这种架构允许专用软件生厂商分享平台和硬件支持花费，而支持新兴的的传统的软件生态系统的定价是不同的。
 
-[OpenEmbedded][8] Linux supports a range of x86 and ARM devices, while Xen isolates operating systems and [unikernels][9]. Applications and drivers from multiple ecosystems can run concurrently, expanding technical and licensing options. Special-purpose software can be securely composed with general-purpose software in isolated VMs, anchored by a hardware-assisted root of trust defined by customer and OEM policies. This architecture allows specialist software vendors to share platform and hardware support costs, while supporting emerging and legacy software ecosystems that have different rates of change.
+### 站在硬件，固件和软件开发者的肩膀上
 
-### On the Shoulders of Hardware, Firmware and Software Developers
+ ![0eMLJYIX3yDSWwbPA-1nhpPwza2JM2m_zJ7Idh41](https://lh3.googleusercontent.com/0eMLJYIX3yDSWwbPA-1nhpPwza2JM2m_zJ7Idh417_NW8eESi2rbXHjsUnMURaXRxV8vekNB6EVV4dBheddUZDgjmk3VkKUOSDzY0aFnPf6-LFquwNzoUVZAKeTH5iBSDzWjCHQFx8dh7zdgyQ) 
 
-###  ![0eMLJYIX3yDSWwbPA-1nhpPwza2JM2m_zJ7Idh41](https://lh3.googleusercontent.com/0eMLJYIX3yDSWwbPA-1nhpPwza2JM2m_zJ7Idh417_NW8eESi2rbXHjsUnMURaXRxV8vekNB6EVV4dBheddUZDgjmk3VkKUOSDzY0aFnPf6-LFquwNzoUVZAKeTH5iBSDzWjCHQFx8dh7zdgyQ) 
+ _系统架构, from NIST SP800-193 (草稿), Platform Firmware Resiliency_ 
 
- _System Architecture, from NIST SP800-193 (Draft), Platform Firmware Resiliency_ 
+在用户面对软件应用的时刻，开始执行一个断电的硬件设备，一系列的固件和软件准备好了运行在平台上。专用设施的信息安全和功能安全的检查依赖于平台固件和计算设备的“信任根”的开发者。
 
-By the time a user-facing software application begins executing on a powered-on hardware device, an array of firmware and software is already running on the platform.  Special-purpose applications’ security and safety assertions are dependent on platform firmware and the developers of a computing device’s “root of trust.”
-
-If we consider the cosmological “[Turtles All The Way Down][2]” question for a computing device, the root of trust is the lowest-level combination of hardware, firmware and software that is initially trusted to perform critical security functions and persist state. Hardware components used in roots of trust include the TCG's Trusted Platform Module ([TPM][10]), ARM’s [TrustZone][11]-enabled Trusted Execution Environment ([TEE][12]), Apple’s [Secure Enclave][13] co-processor ([SEP][14]), and Intel's Management Engine ([ME][15]) in x86 CPUs. [TPM 2.0][16]was approved as an ISO standard in 2015 and is widely available in 2017 devices.
+如果我们针对计算设备考虑宇宙哲学 “[海龟垂钓][2]” 问题，那么根本的新人就是最底层的硬件，固件和软件的组合，是最初对关键安全功能和持久状态的信任。用在根信任的硬件组件包括 TCG 的安全平台模块（[TPM][10]），ARM 的基于 [TrustZone][11] 的可信执行环境（[TEE][12]），Apple 的 [安全领土][13] 协处理器（[SEP][14]），以及 Intel 在 x86 处理器的管理引擎（[ME][15]）。在 2015年 [TPM 2.0][16] 被接受作为 ISO 标准，在 2017 年被广泛应用与各种设备。
 
 TPMs enable key authentication, integrity measurement and remote attestation. TPM key generation uses a hardware random number generator, with private keys that never leave the chip. TPM integrity measurement functions ensure that sensitive data like private keys are only used by trusted code. When software is provisioned, its cryptographic hash is used to extend a chain of hashes in TPM Platform Configuration Registers (PCRs). When the device boots, sensitive data is only unsealed if measurements of running software can recreate the PCR hash chain that was present at the time of sealing. PCRs record the aggregate result of extending hashes, while the TPM Event Log records the hash chain.  
 
